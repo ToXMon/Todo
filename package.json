@@ -1,0 +1,19 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Todo App with Deadlines - Full Stack Application",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Use: cd frontend && npm run dev' && cd frontend && npm run dev",
+    "build": "cd frontend && npm install && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "node backend/src/index.js"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "engines": {
+    "node": "18.x"
+  }
+}
